@@ -4,7 +4,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import numpy as np
 
-# Load the dataset
 file_path = 'sAdvertising.csv'
 data = pd.read_csv(file_path)
 
