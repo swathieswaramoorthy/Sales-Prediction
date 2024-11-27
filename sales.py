@@ -7,12 +7,10 @@ import numpy as np
 file_path = 'sAdvertising.csv'
 data = pd.read_csv(file_path)
 
-# Inspect the dataset
 print("Dataset Head:\n", data.head())
 print("\nDataset Info:\n", data.info())
 print("\nSummary Statistics:\n", data.describe())
 
-# Splitting data into features (X) and target (y)
 X = data[['TV', 'Radio', 'Newspaper']]  # Features
 y = data['Sales']  # Target variable
 
