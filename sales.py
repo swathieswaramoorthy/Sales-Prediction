@@ -12,7 +12,7 @@ print("\nDataset Info:\n", data.info())
 print("\nSummary Statistics:\n", data.describe())
 
 X = data[['TV', 'Radio', 'Newspaper']]  # Features
-y = data['Sales']  # Target variable
+y = data['Sales']  
 
 # Splitting into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
